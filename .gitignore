@@ -1,6 +1,40 @@
+# Python
 __pycache__/
-*.pyc
-user_uploads/
+*.py[codz]
+*$py.class
+
+# Virtual environments
 .env
+.envrc
+.venv
 venv/
-.venv/
+env/
+ENV/
+
+# User uploads
+user_uploads/
+
+# Build files
+build/
+dist/
+*.egg-info/
+
+# Flask
+instance/
+.webassets-cache
+
+# Testing & caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints
+
+# VS Code
+.vscode/
+
+# Temporary files
+tempCodeRunnerFile.py
