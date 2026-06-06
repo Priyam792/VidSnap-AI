@@ -64,12 +64,18 @@ python main.py
 
 ## Screenshots
 
-Add screenshots of:
+### Home Page
+![Home Page](screenshots/Home.png)
 
-* Home Page
-* Reel Creation Page
-* Generated Reel
-* Gallery Page
+### Create Reel
+![Create Reel](screenshots/Create.png)
+
+### Gallery
+![Gallery](screenshots/Gallery.png)
+
+### Generated Reel
+![Generated Reel](screenshots/reel.png)
+
 
 ## Future Improvements
 
