@@ -11,6 +11,10 @@ The application uses ElevenLabs Text-to-Speech technology to convert text into n
   <img src="demo/vidsnap-demo.gif" width="850">
 </p>
 
+## Demo
+
+![VidSnap AI Demo](demo/vidsnap-demo.gif)
+
 ## Features
 
 * Upload multiple images
