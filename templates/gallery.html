@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+
+{% block title %}Gallery - AI Reel Generator{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/gallery.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="container gallery-container">
+    <h1 class="gallery-title">Reel Gallery</h1>
+    <div class="gallery-grid">
+        {% if reels %}
+            {% for reel in reels %}
+                <div class="gallery-item">
+                    <div class="reel-card" data-video-url="{{ reel.video_url }}" data-title="{{ reel.title }}">
+                        <div class="reel-thumbnail">
+                            <img src="{{ reel.thumbnail_url }}" alt="{{ reel.title }}">
+                            <div class="play-overlay">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="reel-info">
+                            <h3>{{ reel.title }}</h3>
+                            <p>{{ reel.description }}</p>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        {% else %}
+            <div class="text-center py-5 w-100" style="grid-column: 1 / -1;">
+                <p class="fs-5 text-muted">No reels generated yet.</p>
+                <a href="/create" class="btn btn-primary mt-2">Create one now!</a>
+            </div>
+        {% endif %}
+    </div>
+</div>
+
+<!-- Video Modal -->
+<div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-dark text-white border-0 shadow-lg" style="border-radius: 15px; overflow: hidden;">
+            <div class="modal-header border-0 pb-0">
+                <h5 class="modal-title text-truncate" id="videoModalLabel" style="max-width: 90%;">Reel Player</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center p-3">
+                <video id="modalVideo" controls class="w-100 rounded" style="max-height: 75vh;" autoplay></video>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const cards = document.querySelectorAll('.reel-card');
+        const modal = new bootstrap.Modal(document.getElementById('videoModal'));
+        const video = document.getElementById('modalVideo');
+        const title = document.getElementById('videoModalLabel');
+        
+        cards.forEach(card => {
+            card.addEventListener('click', function() {
+                const videoUrl = this.getAttribute('data-video-url');
+                const videoTitle = this.getAttribute('data-title');
+                
+                video.src = videoUrl;
+                title.textContent = videoTitle;
+                modal.show();
+            });
+        });
+        
+        document.getElementById('videoModal').addEventListener('hidden.bs.modal', function () {
+            video.pause();
+            video.src = '';
+        });
+    });
+</script>
+{% endblock %} 
