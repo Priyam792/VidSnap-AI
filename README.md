@@ -88,8 +88,9 @@ python main.py
   </tr>
 </table>
 
-<h2>Demo</h2>
-<img src="demo/vidsnap-demo.gif" width="800">
+## Demo
+
+![VidSnap AI Demo](dmeo/vidsnap-demo.gif)
 
 ## Future Improvements
 
