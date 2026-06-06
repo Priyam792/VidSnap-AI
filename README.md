@@ -12,7 +12,6 @@ The application uses ElevenLabs Text-to-Speech technology to convert text into n
 </p>
 
 ## Demo
-
 ![VidSnap AI Demo](demo/vidsnap-demo.gif)
 
 ## Features
