@@ -88,6 +88,11 @@ python main.py
   </tr>
 </table>
 
+## Demo Video
+
+Download and watch the demo:
+
+[VidSnap AI Demo](demos/Vidsnap-demo.mp4)
 
 ## Future Improvements
 
