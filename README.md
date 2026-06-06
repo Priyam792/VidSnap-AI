@@ -92,7 +92,7 @@ python main.py
 
 Download and watch the demo:
 
-[VidSnap AI Demo](demos/Vidsnap-demo.mp4)
+[VidSnap AI Demo](demo/Vidsnap-demo.mp4)
 
 ## Future Improvements
 
