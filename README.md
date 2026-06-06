@@ -8,7 +8,7 @@ The application uses ElevenLabs Text-to-Speech technology to convert text into n
 <h2>Demo</h2>
 
 <p align="center">
-  <img src="demo/vidsnap.gif" width="850">
+  <img src="demo/vidsnap-demo.gif" width="850">
 </p>
 
 ## Features
