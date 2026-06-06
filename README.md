@@ -5,6 +5,12 @@ VidSnap AI is a Flask-based web application that transforms user-uploaded images
 
 The application uses ElevenLabs Text-to-Speech technology to convert text into natural-sounding narration and automatically combines images, audio, and visual effects into a shareable reel. Generated videos can be viewed through a built-in gallery page.
 
+<h2>Demo</h2>
+
+<p align="center">
+  <img src="demo/vidsnap.gif" width="850">
+</p>
+
 ## Features
 
 * Upload multiple images
@@ -87,10 +93,6 @@ python main.py
     </td>
   </tr>
 </table>
-
-## Demo
-
-![VidSnap AI Demo](dmeo/vidsnap-demo.gif)
 
 ## Future Improvements
 
