@@ -64,17 +64,29 @@ python main.py
 
 <h2>Screenshots</h2>
 
-<h3>Home Page</h3>
-<img src="screenshots/Home.png" width="800">
+<table>
+  <tr>
+    <td align="center">
+      <b>Home Page</b><br>
+      <img src="screenshots/Home.png" width="400">
+    </td>
+    <td align="center">
+      <b>Create Page</b><br>
+      <img src="screenshots/Create.png" width="400">
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <b>Gallery Page</b><br>
+      <img src="screenshots/Gallery.png" width="400">
+    </td>
+    <td align="center">
+      <b>Generated Reel</b><br>
+      <img src="screenshots/reel.png" width="400">
+    </td>
+  </tr>
+</table>
 
-<h3>Create Reel</h3>
-<img src="screenshots/Create.png" width="800">
-
-<h3>Gallery</h3>
-<img src="screenshots/Gallery.png" width="800">
-
-<h3>Generated Reel</h3>
-<img src="screenshots/reel.png" width="800">
 
 ## Future Improvements
 
