@@ -1,5 +1,6 @@
 # VidSnap AI 🎬
 
+> Create AI-powered video reels from images and text using Flask, ElevenLabs TTS, and FFmpeg.
 VidSnap AI is a Flask-based web application that transforms user-uploaded images and custom text into engaging video reels.
 
 The application uses ElevenLabs Text-to-Speech technology to convert text into natural-sounding narration and automatically combines images, audio, and visual effects into a shareable reel. Generated videos can be viewed through a built-in gallery page.
