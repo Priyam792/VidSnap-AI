@@ -62,20 +62,19 @@ ELEVENLABS_API_KEY=your_api_key_here
 python main.py
 ```
 
-## Screenshots
+<h2>Screenshots</h2>
 
-### Home Page
-![Home Page](screenshots/Home.png)
+<h3>Home Page</h3>
+<img src="screenshots/Home.png" width="800">
 
-### Create Reel
-![Create Reel](screenshots/Create.png)
+<h3>Create Reel</h3>
+<img src="screenshots/Create.png" width="800">
 
-### Gallery
-![Gallery](screenshots/Gallery.png)
+<h3>Gallery</h3>
+<img src="screenshots/Gallery.png" width="800">
 
-### Generated Reel
-![Generated Reel](screenshots/reel.png)
-
+<h3>Generated Reel</h3>
+<img src="screenshots/reel.png" width="800">
 
 ## Future Improvements
 
